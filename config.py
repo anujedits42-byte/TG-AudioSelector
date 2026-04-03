@@ -27,10 +27,7 @@ DOWNLOAD_DIR = "downloads"
 # --
 
 # Allowed group IDs
-ALLOWED_GROUP_IDS = [
-    ,  # Your group ID from logs
-    # Add more group IDs as needed
-]
+ALLOWED_GROUP_IDS = [-1003515041061]
 
 # Owner user ID
 OWNER_ID = 7892805795  # Owner's user ID

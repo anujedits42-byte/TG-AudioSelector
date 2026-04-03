@@ -40,10 +40,10 @@ def create_main_buttons():
     return InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/clutch008"),
+            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/log_channel_a"),
         ],
         [
-            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/clutch008"),
+            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/anujedits76"),
         ],
     ])
 # ----------------------------------------

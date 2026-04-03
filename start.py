@@ -105,11 +105,11 @@ def register_start_handlers(app: Client):
         ])
 
         about_caption = (
-            "<b><blockquote>Hᴇʏ ᴅᴇᴀʀ ᴍʏ ɴᴀᴍᴇ Iuno</b></blockquote>\n"
-            f"<b><blockquote>◈ Oᴡɴᴇʀ : <a href='https://t.me/clutch008'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n"
-            f"◈ Dᴇᴠᴇʟᴏᴩᴇʀ : <a href='https://t.me/clutch008'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n"
-            f"◈ Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/+HzquTipfQsA1YWFl'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n"
-            f"◈ Uᴩᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ : <a href='https://t.me/BOTSKINGDOMS'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b></blockquote>"
+            "<b><blockquote>Hᴇʏ ᴅᴇᴀʀ ᴍʏ ɴᴀᴍᴇ 𝐀𝐍𝐔𝐉 𝐊𝐔𝐌𝐀𝐑</b></blockquote>\n"
+            f"<b><blockquote>◈ Oᴡɴᴇʀ : <a href='https://t.me/anujedits76'>𝐀𝐍𝐔𝐉 𝐊𝐔𝐌𝐀𝐑</a>\n"
+            f"◈ Dᴇᴠᴇʟᴏᴩᴇʀ : <a href='https://t.me/anujedits76'>𝐀𝐍𝐔𝐉</a>\n"
+            f"◈ Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/log_channel_a'>𝐀𝐊</a>\n"
+            f"◈ Uᴩᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ : <a href='https://t.me/log_channel_a'>𝐀𝐊</a></b></blockquote>"
         )
 
         await callback_query.message.edit_media(

@@ -42,10 +42,10 @@ def create_main_buttons():
     return InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/clutch008"),
+            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/log_channel_a"),
         ],
         [
-            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/clutch008"),
+            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/anujedits76"),
         ],
     ])
 # ----------------------------------------
@@ -72,7 +72,7 @@ def register_start_handlers(app: Client):
         caption = (
             f"<pre>Hᴇʏᴏ ᴄᴜᴛɪᴇ</pre>\n"
             f"<b><blockquote>›› ɪ’ᴍ ᴀ ʜᴀɴᴅʏ ᴀᴜᴅɪᴏ ꜱᴇʟᴇᴄᴛᴏʀ ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴄʜᴏᴏꜱᴇ ᴏʀ ʀᴇᴍᴏᴠᴇ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴠɪᴅᴇᴏꜱ!</b></blockquote>\n"
-            f"<b><blockquote>◈ <a href='https://t.me/clutch008'>ABHI : ᴡʜᴇʀᴇ ᴀʀɪsᴇ</a></b></blockquote>"
+            f"<b><blockquote>◈ <a href='https://t.me/https://t.me/log_channel_a'>𝐀𝐍𝐔𝐉 𝐊𝐔𝐌𝐀𝐑 : ᴡʜᴇʀᴇ ᴀʀɪsᴇ</a></b></blockquote>"
         )
 
         if START_PIC:
@@ -131,7 +131,7 @@ def register_start_handlers(app: Client):
         main_caption = (
             f"<pre>Hᴇʏᴏ ᴄᴜᴛɪᴇ</pre>\n"
             f"<b><blockquote>›› I’ᴍ ᴀ ᴄᴜᴛᴇ ᴀɴɪᴍᴇ ɴᴇᴡs ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ sʜᴀʀᴇ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴜᴘᴅᴀᴛᴇs ᴡɪᴛʜ ʏᴏᴜʀ sᴘᴇᴄɪᴀʟ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ</b></blockquote>\n"
-            f"<b><blockquote>◈ <a href='https://t.me/ABHI_News'>ABHI : ᴡʜᴇʀᴇ ɴᴇᴡs ᴀʀɪsᴇ</a></b></blockquote>"
+            f"<b><blockquote>◈ <a href='https://t.me/log_channel_a'>𝐀𝐍𝐔𝐉 : ᴡʜᴇʀᴇ ɴᴇᴡs ᴀʀɪsᴇ</a></b></blockquote>"
         )
 
         if START_PIC:

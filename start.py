@@ -129,9 +129,9 @@ def register_start_handlers(app: Client):
     @app.on_callback_query(filters.regex("back"))
     async def back_cb(client: Client, callback_query):
         main_caption = (
-            f"<pre>Hᴇʏᴏ ᴄᴜᴛɪᴇ</pre>\n"
+            f"<pre>Hᴇʏ ᴄᴜᴛɪᴇ</pre>\n"
             f"<b><blockquote>›› I’ᴍ ᴀ ᴄᴜᴛᴇ ᴀɴɪᴍᴇ ɴᴇᴡs ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ sʜᴀʀᴇ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴜᴘᴅᴀᴛᴇs ᴡɪᴛʜ ʏᴏᴜʀ sᴘᴇᴄɪᴀʟ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ</b></blockquote>\n"
-            f"<b><blockquote>◈ <a href='https://t.me/log_channel_a'>𝐀𝐍𝐔𝐉 : ᴡʜᴇʀᴇ ɴᴇᴡs ᴀʀɪsᴇ</a></b></blockquote>"
+            f"<b><blockquote>◈ <a href='https://t.me/anujedits76'>𝐀𝐍𝐔𝐉</a></b></blockquote>"
         )
 
         if START_PIC:

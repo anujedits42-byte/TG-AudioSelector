@@ -1,0 +1,53 @@
+import json
+from pyrogram import filters
+
+PREMIUM_FILE = "premium_users.json"
+
+# Load premium users
+if os.path.exists(PREMIUM_FILE):
+    with open(PREMIUM_FILE, "r") as f:
+        PREMIUM_USERS = json.load(f)
+else:
+    PREMIUM_USERS = []
+    with open(PREMIUM_FILE, "w") as f:
+        json.dump(PREMIUM_USERS, f)
+
+def save_premium():
+    with open(PREMIUM_FILE, "w") as f:
+        json.dump(PREMIUM_USERS, f)
+
+# ----------------- ADD PREMIUM -----------------
+@app.on_message(filters.command("premium"))
+async def add_premium(client, message):
+    if message.from_user.id != OWNER_ID:  # sirf owner add kar sakta
+        await message.reply("You are not allowed to use this command ❌")
+        return
+    try:
+        user_id = int(message.text.split()[1])
+    except:
+        await message.reply("Usage: /premium <user_id>")
+        return
+    if user_id in PREMIUM_USERS:
+        await message.reply(f"User {user_id} is already PREMIUM 🟢")
+    else:
+        PREMIUM_USERS.append(user_id)
+        save_premium()
+        await message.reply(f"User {user_id} added to PREMIUM ✅")
+
+# ----------------- REMOVE PREMIUM -----------------
+@app.on_message(filters.command("unpremium"))
+async def remove_premium(client, message):
+    if message.from_user.id != OWNER_ID:  # sirf owner remove kar sakta
+        await message.reply("You are not allowed to use this command ❌")
+        return
+    try:
+        user_id = int(message.text.split()[1])
+    except:
+        await message.reply("Usage: /unpremium <user_id>")
+        return
+    if user_id not in PREMIUM_USERS:
+        await message.reply(f"User {user_id} is not PREMIUM ❌")
+    else:
+        PREMIUM_USERS.remove(user_id)
+        save_premium()
+        await message.reply(f"User {user_id} removed from PREMIUM ✅")

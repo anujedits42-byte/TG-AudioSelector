@@ -41,3 +41,8 @@ def run_bot():
         loop.run_until_complete(start_bot())
     except Exception as e:
         print(f"Bot Error: {e}")
+
+
+# 👇 IMPORTANT (Flask ke saath use ke liye)
+import threading
+threading.Thread(target=run_bot, daemon=True).start()

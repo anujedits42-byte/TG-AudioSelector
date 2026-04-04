@@ -5,6 +5,12 @@ API_ID = int(os.environ.get("API_ID", "34446649"))
 API_HASH = os.environ.get("API_HASH", "8dc570c08d8e35e88fb9bfc73c65d7fa")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8741784728:AAFLpwz7UZvEUumoxgO2I7ii8Lo-9ZSpa1o")
 
+# MongoDB URL
+MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0")
+
+# DB Channel ID
+DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", "-1003515041061"))
+
 # Owner user ID
 OWNER_ID = 7892805795  # Owner's user ID
 

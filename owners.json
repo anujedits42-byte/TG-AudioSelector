@@ -1,0 +1,55 @@
+import json
+import os
+from pyrogram import Client, filters
+
+# ---------------- CONFIG ----------------
+OWNERS_FILE = "owners.json"
+
+# Load owners list
+if os.path.exists(OWNERS_FILE):
+    with open(OWNERS_FILE, "r") as f:
+        OWNERS = json.load(f)
+else:
+    OWNERS = []  # yahan default owner IDs bhi add kar sakte ho
+    with open(OWNERS_FILE, "w") as f:
+        json.dump(OWNERS, f)
+
+def save_owners():
+    with open(OWNERS_FILE, "w") as f:
+        json.dump(OWNERS, f)
+
+# ---------------- COMMANDS ----------------
+@app.on_message(filters.command("addowner"))
+async def add_owner(client: Client, message):
+    # Sirf existing owners hi naya owner add kar sakte
+    if message.from_user.id not in OWNERS:
+        await message.reply("You are not allowed to use this command ❌")
+        return
+    try:
+        user_id = int(message.text.split()[1])
+    except:
+        await message.reply("Usage: /addowner <user_id>")
+        return
+    if user_id in OWNERS:
+        await message.reply(f"User {user_id} is already an owner 🟢")
+    else:
+        OWNERS.append(user_id)
+        save_owners()
+        await message.reply(f"User {user_id} added as OWNER ✅")
+
+@app.on_message(filters.command("removeowner"))
+async def remove_owner(client: Client, message):
+    if message.from_user.id not in OWNERS:
+        await message.reply("You are not allowed to use this command ❌")
+        return
+    try:
+        user_id = int(message.text.split()[1])
+    except:
+        await message.reply("Usage: /removeowner <user_id>")
+        return
+    if user_id not in OWNERS:
+        await message.reply(f"User {user_id} is not an owner ❌")
+    else:
+        OWNERS.remove(user_id)
+        save_owners()
+        await message.reply(f"User {user_id} removed from owners ✅")

@@ -73,8 +73,8 @@ daily_limits={}
 # 𝐀𝐍𝐘 𝐈𝐒𝐒𝐔𝐄𝐒 𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐬 𝐂𝐀𝐍 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄
 # --
 # Sticker and images
-START_PIC = "https://telegra.ph/HgBotz-08-09-5"
-ABOUT_PIC = "https://telegra.ph/HgBotz-08-09-6"
+START_PIC = "https://image.zaw-myo.workers.dev/image/386e9b0f-028e-4f9e-b3e8-a3774a83b1bf"
+ABOUT_PIC = "https://image.zaw-myo.workers.dev/image/c1ee4bb7-aba9-4f09-a95a-e6cb0236b8c6"
 # ----------------------------------------
 # 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐀𝐁𝐇𝐈
 # 𝐓𝐆 𝐈𝐃 : @𝐂𝐋𝐔𝐓𝐂𝐇𝟎𝟎𝟖
@@ -299,7 +299,7 @@ def register_handlers(app: Client):
         ])
 
         caption = (
-            f"<pre>Hᴇʟʟᴏ ᴄᴜᴛɪᴇ</pre>\n"
+            f"<pre>Hᴇʏ ᴄᴜᴛɪᴇ</pre>\n"
             f"<b><blockquote>›› ɪ’ᴍ ᴀ ʜᴀɴᴅʏ ᴀᴜᴅɪᴏ ꜱᴇʟᴇᴄᴛᴏʀ ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴄʜᴏᴏꜱᴇ ᴏʀ ʀᴇᴍᴏᴠᴇ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴠɪᴅᴇᴏꜱ!</b></blockquote>\n"
             f"<b><blockquote>◈ <a href='https://t.me/anujedits76'>𝐀𝐍𝐔𝐉 𝐊𝐔𝐌𝐀𝐑</a></b></blockquote>"
         )
@@ -374,7 +374,7 @@ def register_handlers(app: Client):
         ])
 
         main_caption = (
-            f"<pre>Hᴇʏᴏ ᴄᴜᴛɪᴇ</pre>\n"
+            f"<pre>Hᴇʏ ᴄᴜᴛɪᴇ</pre>\n"
             f"<b><blockquote>›› ɪ’ᴍ ᴀ ʜᴀɴᴅʏ ᴀᴜᴅɪᴏ ꜱᴇʟᴇᴄᴛᴏʀ ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴄʜᴏᴏꜱᴇ ᴏʀ ʀᴇᴍᴏᴠᴇ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴠɪᴅᴇᴏꜱ!</b></blockquote>\n"
             f"<b><blockquote>◈ <a href='https://t.me/anujedits76'>𝐀𝐊 : ᴡʜᴇʀᴇ ᴀʀɪsᴇ</a></b></blockquote>"
         )

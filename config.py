@@ -16,8 +16,10 @@ PREMIUM_USERS = {7892805795}  # Add premium user IDs here
 DAILY_LIMIT_FREE = 30  # Videos per day for free users
 DAILY_LIMIT_PREMIUM = 60  # Videos per day for premium users
 
+# Download directory
+DOWNLOAD_DIR = "./downloads"
+
 # Ensure download directory exists
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 if not os.access(DOWNLOAD_DIR, os.W_OK):
     raise PermissionError(f"No write permission for {DOWNLOAD_DIR}")
-# ----------------------------------------

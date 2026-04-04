@@ -1,12 +1,17 @@
+from flask import Flask
+import threading
+import os
+import asyncio
+
+app = Flask(__name__)
+
+@app.route("/")
 def home():
     return "Bot is Running 🚀"
 
-async def start_bot():
-    import asyncio
-    import logging
 
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+async def start_bot():
+    import logging
 
     from main import app as bot_client
     from start import register_start_handlers
@@ -32,8 +37,6 @@ async def start_bot():
 
 
 def run_bot():
-    import asyncio
-
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
@@ -43,6 +46,13 @@ def run_bot():
         print(f"Bot Error: {e}")
 
 
-# 👇 IMPORTANT (Flask ke saath use ke liye)
-import threading
+# ✅ Bot thread start
 threading.Thread(target=run_bot, daemon=True).start()
+
+
+# ✅ PORT (VERY IMPORTANT for Render)
+port = int(os.environ.get("PORT", 5000))
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=port)

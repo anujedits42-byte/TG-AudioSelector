@@ -14,6 +14,7 @@ DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", "-1003515041061"))
 # Owner user ID
 OWNER_ID = 7892805795  # Owner's user ID
 
+# ALLOWED GROUP IDS
 ALLOWED_GROUP_IDS = {
     -1003791508617
 }

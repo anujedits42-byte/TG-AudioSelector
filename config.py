@@ -12,7 +12,7 @@ MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://Anujedit:Anujedit@c
 DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", "-1003515041061"))
 
 # Owner user ID
-OWNER_ID = 7892805795, 7168219724, 8256962358  # Owner's user ID
+OWNER_ID = 7892805795  # Owner's user ID
 
 # ALLOWED GROUP IDS
 ALLOWED_GROUP_IDS = {
@@ -23,7 +23,7 @@ ALLOWED_GROUP_IDS = {
 MAX_FILE_SIZE = 4 * 1024 * 1024 * 1024  # 4GB in bytes
 
 # Premium users and daily limits
-PREMIUM_USERS = {7892805795, 7168219724, 8256962358}  # Add premium user IDs here
+PREMIUM_USERS = {7892805795}  # Add premium user IDs here
 DAILY_LIMIT_FREE = 30  # Videos per day for free users
 DAILY_LIMIT_PREMIUM = 60  # Videos per day for premium users
 
